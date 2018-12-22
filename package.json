@@ -1,6 +1,6 @@
 {
   "name": "trace-manager",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "The code architecture allows a simple method to be monitored.",
   "main": "src/index.js",
   "scripts": {
