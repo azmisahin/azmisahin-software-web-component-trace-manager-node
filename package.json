@@ -11,6 +11,20 @@
     "type": "git",
     "url": "git+https://github.com/azmisahin/azmisahin-software-web-component-trace-manager-node.git"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged",
+      "commitmsg": "commit stage",
+      "pre-push": "npm run test && npm version patch"
+    }
+  },
+  "lint-staged": {
+    "*.js": [
+      "npm run lint",
+      "npm run test",
+      "git add"
+    ]
+  },
   "keywords": [
     "trace",
     "monitored",
@@ -25,6 +39,8 @@
   },
   "homepage": "https://github.com/azmisahin/azmisahin-software-web-component-trace-manager-node#readme",
   "devDependencies": {
-    "eslint": "^5.10.0"
+    "eslint": "^5.10.0",
+    "husky": "^1.2.1",
+    "lint-staged": "^8.1.0"
   }
 }
