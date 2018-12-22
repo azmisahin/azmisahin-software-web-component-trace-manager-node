@@ -1,0 +1,26 @@
+{
+  "name": "trace-manager",
+  "version": "0.0.1",
+  "description": "The code architecture allows a simple method to be monitored.",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "node tests"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/azmisahin/azmisahin-software-web-component-trace-manager-node.git"
+  },
+  "keywords": [
+    "trace",
+    "monitored",
+    "logger",
+    "manager",
+    "web"
+  ],
+  "author": "azmisahin@outlook.com",
+  "license": "MIT",  
+  "bugs": {
+    "url": "https://github.com/azmisahin/azmisahin-software-web-component-trace-manager-node/issues"
+  },
+  "homepage": "https://github.com/azmisahin/azmisahin-software-web-component-trace-manager-node#readme"
+}
