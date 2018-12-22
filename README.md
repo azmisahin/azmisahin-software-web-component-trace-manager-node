@@ -1,2 +1,2 @@
-# azmisahin-software-web-component-trace-manager-node
+# trace-manager
 The code architecture allows a simple method to be monitored.
