@@ -5,7 +5,7 @@
   "main": "src/index.js",
   "scripts": {
     "test": "node tests",
-    "lint": "eslint src | eslint tests"
+    "lint": "eslint src --fix && eslint tests --fix"
   },
   "repository": {
     "type": "git",
