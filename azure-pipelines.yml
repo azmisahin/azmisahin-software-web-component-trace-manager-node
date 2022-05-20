@@ -85,6 +85,7 @@ jobs:
 
 - job: SendPackage
   displayName: pack and ship the project on agent
+  dependsOn: Build
 
   pool:
     vmImage: ubuntu-latest
