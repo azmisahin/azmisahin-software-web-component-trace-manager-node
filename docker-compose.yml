@@ -1,0 +1,47 @@
+version: '3.8'
+services:
+  application:
+    build:
+      context: .
+      # load operating system container
+      dockerfile: Dockerfile.${CONTAINER}
+      args:
+        # build
+        NAME: ${NAME}
+        WORK_DIR: ${WORK_DIR}
+        BUILD_DIR: ${BUILD_DIR}
+        DIST_DIR: ${DIST_DIR}
+
+        # application
+        SWICH_TRACKING_TRACE: "false"
+        SWICH_TRACKING_DEBUG: "false"
+        SWICH_TRACKING_INFO: "true"
+        SWICH_TRACKING_WARN: "false"
+        SWICH_TRACKING_ERROR: "true"
+        SWICH_TRACKING_VERBOSE: "false"
+        SWICH_TRACKING_REPORT: "false"
+      labels:
+        com.azmisahin.description: ${NAME}
+        com.azmisahin.department: "DEVOPS"
+      # stage
+      target: ${ENV}
+    container_name: ${NAME}-${ENV}-${CONTAINER}
+    environment:
+      # build
+      NAME: ${NAME}
+      WORK_DIR: ${WORK_DIR}
+      BUILD_DIR: ${BUILD_DIR}
+      DIST_DIR: ${DIST_DIR}
+
+      # application
+      SWICH_TRACKING_TRACE: "false"
+      SWICH_TRACKING_DEBUG: "false"
+      SWICH_TRACKING_INFO: "true"
+      SWICH_TRACKING_WARN: "false"
+      SWICH_TRACKING_ERROR: "true"
+      SWICH_TRACKING_VERBOSE: "false"
+      SWICH_TRACKING_REPORT: "false"
+    networks:
+      default: null
+    restart: "no"
+    tty: true
