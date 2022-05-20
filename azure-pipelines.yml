@@ -81,7 +81,7 @@ jobs:
     displayName: '[publish] [coverage] [cobertura]'
     inputs:
       codeCoverageTool: Cobertura
-      summaryFileLocation: $(System.DefaultWorkingDirectory)/reports/test/cobertura-coverage.xml
+      summaryFileLocation: $(System.DefaultWorkingDirectory)/reports/coverage/cobertura-coverage.xml
 
 - job: SendPackage
   displayName: pack and ship the project on agent
