@@ -69,7 +69,7 @@ class Tracking {
       console[messageType](this._types[messageType], value)
 
     // operation
-    return result
+    return result || message
   }
 
   /**

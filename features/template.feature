@@ -1,5 +1,12 @@
-Feature: Template
+Feature: Trace Manager
 
-  Scenario: Show welcome message
-    When the application is launched
-    Then i should see the text "Template"
+  Scenario: Should run in debug mode
+    When <method> method is called with <message> message
+    Then it should write <display> message in console"
+
+    Examples: 
+      | method  | message   | display   |
+      | "debug" | "example" | "example" |
+      | "info"  | "example" | "example" |
+      | "warn"  | "example" | "example" |
+      | "error" | "example" | "example" |

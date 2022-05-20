@@ -1,11 +1,14 @@
 const assert = require('assert')
 const { When, Then } = require('@cucumber/cucumber')
-const Template = require('../../src')
+const TraceManager = require('../../src')
 
-When('the application is launched', function () {
-  this.displayName = Template.name
+// instance
+var tm = new TraceManager()
+
+When('{string} method is called with {string} message', function (methodName, message) {
+  this.actual = tm[methodName](message)
 })
 
-Then('i should see the text {string}', function (expectedResponse) {
-  assert.equal(this.displayName, expectedResponse)
+Then('it should write {string} message in console"', function (expected) {
+  assert.equal(this.actual, expected)
 })
