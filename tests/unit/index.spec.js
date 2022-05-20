@@ -2,8 +2,9 @@
 const assert = require('assert').strict
 
 // Target condination.
-const target = 'template'
-const Template = require('../../src')
+const target = 'TrackingManager'
+const Tracking = require('../../src/Tracking')
+const TrackingManager = require('../../src')
 
 /**
  * Application initiation tests.
@@ -24,10 +25,10 @@ describe(`${target}`, function () {
    */
   it(`${target}.constructor`, function () {
     // module instance
-    template = new Template()
+    template = new TrackingManager()
 
     // mock
-    let _parameters = Template
+    let _parameters = Tracking
 
     // parameters
     let expected = _parameters

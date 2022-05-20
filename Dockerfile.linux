@@ -14,7 +14,13 @@ ARG BUILD_DIR="build"
 ARG DIST_DIR="dist"
 
 # default arguments for application
-
+ARG SWICH_TRACKING_TRACE="false"
+ARG SWICH_TRACKING_DEBUG="false"
+ARG SWICH_TRACKING_INFO="true"
+ARG SWICH_TRACKING_WARN="false"
+ARG SWICH_TRACKING_ERROR="true"
+ARG SWICH_TRACKING_VERBOSE="false"
+ARG SWICH_TRACKING_REPORT="false"
 
 # product environment
 ENV ENV=${ENV}
@@ -26,7 +32,13 @@ ENV BUILD_DIR=${BUILD_DIR}
 ENV DIST_DIR=${DIST_DIR}
 
 # default environment for application
-
+ENV SWICH_TRACKING_TRACE="false"
+ENV SWICH_TRACKING_DEBUG="false"
+ENV SWICH_TRACKING_INFO="true"
+ENV SWICH_TRACKING_WARN="false"
+ENV SWICH_TRACKING_ERROR="true"
+ENV SWICH_TRACKING_VERBOSE="false"
+ENV SWICH_TRACKING_REPORT="false"
 
 # make the 'application' folder the current working directory
 WORKDIR ${WORK_DIR}

@@ -13,7 +13,13 @@ services:
         DIST_DIR: ${DIST_DIR}
 
         # application
-
+        SWICH_TRACKING_TRACE: "false"
+        SWICH_TRACKING_DEBUG: "false"
+        SWICH_TRACKING_INFO: "true"
+        SWICH_TRACKING_WARN: "false"
+        SWICH_TRACKING_ERROR: "true"
+        SWICH_TRACKING_VERBOSE: "false"
+        SWICH_TRACKING_REPORT: "false"
       labels:
         com.azmisahin.description: ${NAME}
         com.azmisahin.department: "DEVOPS"
@@ -28,7 +34,13 @@ services:
       DIST_DIR: ${DIST_DIR}
 
       # application
-
+      SWICH_TRACKING_TRACE: "false"
+      SWICH_TRACKING_DEBUG: "false"
+      SWICH_TRACKING_INFO: "true"
+      SWICH_TRACKING_WARN: "false"
+      SWICH_TRACKING_ERROR: "true"
+      SWICH_TRACKING_VERBOSE: "false"
+      SWICH_TRACKING_REPORT: "false"
     networks:
       default: null
     restart: "no"

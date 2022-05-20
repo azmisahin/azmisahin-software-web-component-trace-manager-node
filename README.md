@@ -18,16 +18,21 @@ $ npm i --save trace-manage
 Let's take this example of something to test.
 ```js
 // package define
-const TraceManager = require('trace-manager')
+const TraceManager = require('../src')
 
 // module instance
-var t = new TraceManager()
+var tm = new TraceManager()
 
-// sample
-t.Debug('Any Debug Message')
-t.Info('Any Info Message')
-t.Warning('Any Warning Message')
-t.Error('Any Error Message')
+// any data
+let data = [{ data: 'any' }]
+
+// usage
+tm.trace('trace', ...data)
+tm.debug('debug', ...data)
+tm.info('info', ...data)
+tm.warn('warn', ...data)
+tm.error('error', ...data)
+tm.verbose('verbose', ...data)
 ```
 
 # Getting Started
