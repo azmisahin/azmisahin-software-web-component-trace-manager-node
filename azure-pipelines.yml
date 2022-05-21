@@ -94,11 +94,13 @@ jobs:
   - checkout: self
     clean: true
   - task: Npm@1
+    enabled: False
     displayName: npm install
     inputs:
       verbose: false
   - task: Npm@1
     displayName: npm publish
+    enabled: False
     inputs:
       command: publish
       verbose: true

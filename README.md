@@ -2,7 +2,7 @@
 The code architecture allows a simple method to be monitored.
 
 # Pipelines
-[![Build Status](https://dev.azure.com/azmisahin-github/azmisahin-software-web-component-trace-manager-node/_apis/build/status/azmisahin.azmisahin-software-web-component-trace-manager-node?branchName=master)](https://dev.azure.com/azmisahin-github/azmisahin-software-web-component-trace-manager-node/_build/latest?definitionId=9?branchName=master)
+[![Build Status](https://dev.azure.com/azmisahin-github/azmisahin-software-web-component-trace-manager-node/_apis/build/status/azmisahin.azmisahin-software-web-component-trace-manager-node?branchName=master)](https://dev.azure.com/azmisahin-github/azmisahin-software-web-component-trace-manager-node/_build/latest?definitionId=9)
 
 [![NPM](https://nodei.co/npm/trace-manager.png)](https://nodei.co/npm/trace-manager/)
 
