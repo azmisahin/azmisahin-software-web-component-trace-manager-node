@@ -12,13 +12,13 @@ For a quick start, let's get started.
 ### Install
 You can add the latest version to your project.
 ```bash
-$ npm i --save trace-manage
+$ npm i --save trace-manager
 ```
 ### Usage
 Let's take this example of something to test.
 ```js
 // package define
-const TraceManager = require('../src')
+const TraceManager = require('trace-manager')
 
 // module instance
 var tm = new TraceManager()

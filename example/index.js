@@ -3,7 +3,7 @@
  */
 
 // package define
-const TraceManager = require('../src')
+const TraceManager = require('trace-manager')
 
 // module instance
 var tm = new TraceManager()
